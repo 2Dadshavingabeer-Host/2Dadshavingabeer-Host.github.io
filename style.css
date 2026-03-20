@@ -370,6 +370,23 @@ a {
   color: #fff7ea;
 }
 
+.sponsor-link-card {
+  display: block;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+}
+
+.sponsor-link-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(240,179,71,0.34);
+  box-shadow: 0 24px 55px rgba(0,0,0,0.32);
+  background: linear-gradient(180deg, rgba(240,179,71,0.08), rgba(255,255,255,0.04));
+}
+
+.sponsor-link-card:hover .text-link {
+  color: var(--gold-2);
+}
+
 .split-layout {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
