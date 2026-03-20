@@ -142,15 +142,19 @@
           </p>
         </div>
 
-        <form class="guest-form" action="mailto:2dadshavingabeer@gmail.com" method="post" enctype="text/plain">
+        <form class="guest-form" action="https://formsubmit.co/2dadshavingabeer@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Guest Dad Submission - Two Dads Having a Beer">
+          <input type="hidden" name="_next" value="https://2dadshavingabeer-host.github.io/thanks.html">
+          <input type="hidden" name="_captcha" value="false">
+
           <div class="field-grid">
             <label>
               Full name
-              <input type="text" name="Full Name" placeholder="Your name" />
+              <input type="text" name="Full Name" placeholder="Your name" required />
             </label>
             <label>
               Email
-              <input type="email" name="Email" placeholder="your email address" />
+              <input type="email" name="Email" placeholder="your email address" required />
             </label>
           </div>
 
@@ -167,7 +171,7 @@
 
           <label>
             Tell us your dad story
-            <textarea name="Story" rows="6" placeholder="What would make you a great Guest Dad?"></textarea>
+            <textarea name="Story" rows="6" placeholder="What would make you a great Guest Dad?" required></textarea>
           </label>
 
           <button type="submit" class="btn btn-primary">Apply to be a Guest Dad</button>
