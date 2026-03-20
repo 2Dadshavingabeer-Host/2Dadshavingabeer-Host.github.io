@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Two Dads Having a Beer — real dads, real stories, real beer." />
+  <title>Two Dads Having a Beer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">
+        <span class="brand-mark">🍺</span>
+        <span class="brand-text">Two Dads Having a Beer</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#episodes">Episodes</a>
+        <a href="#about">About</a>
+        <a href="#guest">Be a Guest Dad</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">PODCAST • FATHERHOOD • LIFE • LAUGHS</p>
+        <h1>Real dads. Real stories. Real beer.</h1>
+        <p class="hero-copy">
+          Two Dads Having a Beer is a podcast built on honest conversations about fatherhood,
+          purpose, work, family, and the moments that make us who we are.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#episodes">Watch Episodes</a>
+          <a class="btn btn-secondary" href="#guest">Be a Guest Dad</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong>Host</strong>
+            <span>Brandon Labonte</span>
+          </div>
+          <div class="stat-card">
+            <strong>Format</strong>
+            <span>Stories, laughs, and real talk</span>
+          </div>
+          <div class="stat-card">
+            <strong>Vibe</strong>
+            <span>Warm, bold, and authentic</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="episodes">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">LATEST</p>
+          <h2>Recent episodes</h2>
+          <p>Swap these placeholders with your Buzzsprout, YouTube, or Spotify links.</p>
+        </div>
+
+        <div class="cards three-up">
+          <article class="card episode-card">
+            <span class="pill">Guest Dad Episode</span>
+            <h3>Drew Copeland</h3>
+            <p>Faith, family, music, and what being a present dad looks like on and off the road.</p>
+            <a class="text-link" href="https://www.youtube.com/@TwoDads_having_a_beer" target="_blank" rel="noopener noreferrer">Watch episode</a>
+          </article>
+          <article class="card episode-card">
+            <span class="pill">Latest Drop</span>
+            <h3>Solo Dad Talk</h3>
+            <p>A direct conversation about fatherhood, leadership, marriage, and the weight dads carry.</p>
+            <a class="text-link" href="https://twodadshavingabeer.buzzsprout.com" target="_blank" rel="noopener noreferrer">Listen now</a>
+          </article>
+          <article class="card episode-card">
+            <span class="pill">Coming Soon</span>
+            <h3>Next Guest Dad</h3>
+            <p>Use this card to spotlight who is coming up next and build excitement for the release.</p>
+            <a class="text-link" href="#contact">Nominate a guest</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="about">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">ABOUT THE SHOW</p>
+          <h2>Where the stories matter more than the titles.</h2>
+          <p>
+            Every episode brings on a different dad from a different walk of life. It does not matter
+            what title he holds — in this space, it is about what it really looks like to raise kids,
+            chase purpose, support a family, and stay grounded.
+          </p>
+          <p>
+            Hosted by Brandon Labonte, the show blends humor, honesty, and meaningful conversation in a way
+            that feels more like sitting down with a friend than tuning into a formal interview.
+          </p>
+        </div>
+        <div class="quote-box">
+          <p>
+            “Welcome back to Two Dads Having a Beer — the podcast where the only thing more honest than the stories is the beer in our hands.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="guest">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">BE A GUEST DAD</p>
+          <h2>Want to come on the show?</h2>
+          <p>
+            This starter site uses a simple form that opens your email app. Later, we can replace it
+            with a real intake form using Formspree, Basin, or a custom backend.
+          </p>
+        </div>
+
+        <form class="guest-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+          <div class="field-grid">
+            <label>
+              Full name
+              <input type="text" name="Full Name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="Email" placeholder="you@example.com" />
+            </label>
+          </div>
+          <div class="field-grid">
+            <label>
+              Location
+              <input type="text" name="Location" placeholder="City, State" />
+            </label>
+            <label>
+              Best drink for the show
+              <input type="text" name="Drink" placeholder="Beer, bourbon, coffee..." />
+            </label>
+          </div>
+          <label>
+            Tell us your dad story
+            <textarea name="Story" rows="6" placeholder="What would make you a great Guest Dad?"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Apply to be a Guest Dad</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="sponsors">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">PARTNERS</p>
+          <h2>Sponsors and supporters</h2>
+          <p>Use this section for breweries, local businesses, affiliate partners, or merch announcements.</p>
+        </div>
+
+        <div class="cards three-up">
+          <div class="card sponsor-card">
+            <h3>Brewery Partner</h3>
+            <p>Put your featured brewery, tasting room, or event partner here.</p>
+          </div>
+          <div class="card sponsor-card">
+            <h3>Brand Sponsor</h3>
+            <p>Highlight a business that supports dads, families, or your audience.</p>
+          </div>
+          <div class="card sponsor-card">
+            <h3>Media Kit</h3>
+            <p>Add your sponsorship deck link, rates, and contact details here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">CONNECT</p>
+          <h2>Keep up with the show</h2>
+          <p>Replace the links below with your final social handles, guest form, and sponsor email.</p>
+        </div>
+        <div class="contact-links">
+          <a class="btn btn-secondary" href="https://twodadshavingabeer.buzzsprout.com" target="_blank" rel="noopener noreferrer">Buzzsprout</a>
+          <a class="btn btn-secondary" href="https://www.youtube.com/@TwoDads_having_a_beer" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a class="btn btn-secondary" href="mailto:youremail@example.com">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Two Dads Having a Beer. Built on GitHub Pages.</p>
+      <p class="footer-note">One dad story at a time.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
