@@ -51,7 +51,7 @@ a {
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(14px);
-  background: rgba(3, 3, 3, 0.82);
+  background: rgba(3, 3, 3, 0.88);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -59,7 +59,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 88px;
+  min-height: 78px;
   gap: 24px;
 }
 
@@ -71,20 +71,22 @@ a {
 }
 
 .brand-logo {
-  width: 54px;
-  height: 54px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
   border: 2px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
 }
 
 .brand-text {
   font-family: "Oswald", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.35rem;
   letter-spacing: 0.02em;
   line-height: 1;
   color: #fffaf2;
+  white-space: nowrap;
 }
 
 .site-nav {
@@ -119,7 +121,7 @@ a {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 110px 0 90px;
+  padding: 92px 0 80px;
 }
 
 .hero-overlay {
@@ -148,7 +150,7 @@ a {
 .hero h1 {
   margin: 0 0 18px;
   font-family: "Oswald", sans-serif;
-  font-size: clamp(3.4rem, 9vw, 6.8rem);
+  font-size: clamp(3.1rem, 8vw, 6rem);
   line-height: 0.98;
   letter-spacing: -0.02em;
   max-width: 900px;
@@ -156,7 +158,7 @@ a {
 }
 
 .hero-copy {
-  font-size: 1.22rem;
+  font-size: 1.18rem;
   color: #ece2d4;
   max-width: 760px;
   margin-bottom: 28px;
@@ -166,7 +168,27 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
+}
+
+.platform-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 28px;
+}
+
+.platform-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #f8ecd9;
+  font-size: 0.92rem;
+  font-weight: 700;
 }
 
 .btn {
@@ -303,6 +325,30 @@ a {
   color: var(--gold-2);
 }
 
+.episode-card {
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(240,179,71,0.34);
+  box-shadow: 0 24px 55px rgba(0,0,0,0.32);
+}
+
+.featured-card {
+  background: linear-gradient(180deg, rgba(240,179,71,0.09), rgba(255,255,255,0.04));
+  border: 1px solid rgba(240,179,71,0.28);
+}
+
+.featured-card .pill {
+  color: #ffd08a;
+}
+
+.featured-card h3 {
+  color: #fff7ea;
+}
+
 .split-layout {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -405,8 +451,7 @@ a {
   .hero-stats,
   .three-up,
   .split-layout,
-  .field-grid,
-  .contact-box {
+  .field-grid {
     grid-template-columns: 1fr;
   }
 
@@ -431,7 +476,7 @@ a {
 
   .site-nav {
     position: absolute;
-    top: 88px;
+    top: 78px;
     left: 4%;
     right: 4%;
     display: none;
@@ -450,11 +495,12 @@ a {
   }
 
   .brand-text {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
+    white-space: normal;
   }
 
   .hero {
-    padding-top: 92px;
+    padding-top: 84px;
   }
 
   .hero-copy {
@@ -464,12 +510,12 @@ a {
 
 @media (max-width: 560px) {
   .brand-logo {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
   }
 
   .brand-text {
-    font-size: 1.05rem;
+    font-size: 0.98rem;
   }
 
   .hero h1 {
