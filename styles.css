@@ -292,7 +292,7 @@ a {
   animation: rise linear infinite;
 }
 
-.b1 { left: 4%;  width: 18px; height: 18px; animation-duration: 12s; animation-delay: 0s; }
+.b1 { left: 4%; width: 18px; height: 18px; animation-duration: 12s; animation-delay: 0s; }
 .b2 { left: 10%; width: 32px; height: 32px; animation-duration: 17s; animation-delay: 3s; }
 .b3 { left: 18%; width: 14px; height: 14px; animation-duration: 10s; animation-delay: 1s; }
 .b4 { left: 28%; width: 24px; height: 24px; animation-duration: 15s; animation-delay: 6s; }
@@ -342,10 +342,9 @@ a {
   opacity: 0.96;
 }
 
+/* Removed the cream proof bar completely */
 .proof-bar {
-  background: var(--cream);
-  color: #2a1c12;
-  padding: 16px 0;
+  display: none;
 }
 
 .proof-grid {
