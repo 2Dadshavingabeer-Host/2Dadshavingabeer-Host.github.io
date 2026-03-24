@@ -3,26 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Brewery partnership inquiry for Two Dads Having a Beer." />
   <title>Brewery Partner | Two Dads Having a Beer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta
+    name="description"
+    content="Brewery partnership information for Two Dads Having a Beer podcast."
+  />
+  <link rel="stylesheet" href="site.css?v=4" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="index.html" class="brand">
+      <a class="brand" href="index.html">
         <img src="logo.jpg" alt="Two Dads Having a Beer logo" class="brand-logo" />
         <span class="brand-text">Two Dads Having a Beer</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-      <nav class="site-nav" id="siteNav">
+      <nav class="site-nav">
         <a href="episodes.html">Episodes</a>
-        <a href="about.html">About</a>
+        <a href="index.html#about">About</a>
         <a href="index.html#guest">Be a Guest Dad</a>
         <a href="partners.html">Partners</a>
         <a href="index.html#contact">Contact</a>
@@ -31,110 +36,54 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="eyebrow">BREWERY PARTNER</p>
-        <h1>Put your brewery in front of real dads having real conversations.</h1>
-        <p class="hero-copy">
-          This partnership lane is built for breweries, taprooms, bars, and beverage brands
-          that fit the voice of the show. The goal is not forced promotion. The goal is an
-          authentic fit that feels natural to the audience and worth talking about.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#brewery-form">Start Brewery Inquiry</a>
-          <a class="btn btn-secondary" href="media-kit.html">View Media Kit</a>
-        </div>
-      </div>
-    </section>
-
     <section class="section">
       <div class="container">
-        <div class="cards three-up">
-          <div class="card">
-            <span class="pill">Featured Pour</span>
-            <h3>On-show spotlight</h3>
-            <p>Feature a beer, taproom, or beverage brand naturally within an episode or social story tied to the show.</p>
-          </div>
-          <div class="card">
-            <span class="pill">Cross Promotion</span>
-            <h3>Shared audience visibility</h3>
-            <p>Blend podcast mention, website placement, and social support in a way that feels authentic.</p>
-          </div>
-          <div class="card">
-            <span class="pill">Experience</span>
-            <h3>Live or on-location fit</h3>
-            <p>Explore on-location recording, a hosted conversation, or a local event tie-in when it makes sense.</p>
-          </div>
+        <p class="section-tag">BREWERY PARTNER</p>
+        <h2>Built for breweries, taprooms, and beverage brands</h2>
+        <p class="section-intro">
+          Two Dads Having a Beer is a natural fit for breweries and beverage-focused partners that want authentic exposure with a dad-centered audience.
+        </p>
+
+        <div class="card-grid">
+          <article class="info-card">
+            <h3>What this can include</h3>
+            <p>
+              Sponsor mentions, featured brewery callouts, social promotion, on-show drink spotlighting, giveaways, and custom community-focused collaborations.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Why it fits</h3>
+            <p>
+              The show is casual, honest, and built around real conversation — exactly the kind of environment that pairs well with brewery culture and local partnership energy.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Next step</h3>
+            <p>
+              Reach out and let’s talk about your brewery, your goals, and what a custom partnership could look like for your brand.
+            </p>
+          </article>
         </div>
-      </div>
-    </section>
 
-    <section class="section alt-section" id="brewery-form">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">INQUIRY FORM</p>
-          <h2>Tell us about your brewery or beverage brand</h2>
-          <p>Fill this out and we’ll review the fit, the opportunity, and how we might build something together.</p>
+        <div class="section-actions" style="margin-top: 32px;">
+          <a class="btn btn-primary" href="mailto:2dadshavingabeer@gmail.com?subject=Brewery%20Partnership%20Inquiry">Email About Brewery Partnership</a>
+          <a class="btn btn-secondary" href="media-kit.html">View Media Kit</a>
         </div>
-
-        <form class="guest-form" action="https://formsubmit.co/2dadshavingabeer@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="New Brewery Partner Inquiry - Two Dads Having a Beer">
-          <input type="hidden" name="_next" value="https://2dadshavingabeer-host.github.io/thanks-brewery.html">
-          <input type="hidden" name="_captcha" value="false">
-
-          <div class="field-grid">
-            <label>
-              Business name
-              <input type="text" name="Business Name" placeholder="Your brewery or venue name" required />
-            </label>
-            <label>
-              Contact name
-              <input type="text" name="Contact Name" placeholder="Your name" required />
-            </label>
-          </div>
-
-          <div class="field-grid">
-            <label>
-              Email
-              <input type="email" name="email" placeholder="your email address" required />
-            </label>
-            <label>
-              Website or Instagram
-              <input type="text" name="Website or Instagram" placeholder="Website or social link" />
-            </label>
-          </div>
-
-          <div class="field-grid">
-            <label>
-              City / State
-              <input type="text" name="Location" placeholder="City, State" />
-            </label>
-            <label>
-              Partnership interest
-              <input type="text" name="Partnership Interest" placeholder="Featured pour, event, sponsor mention, etc." />
-            </label>
-          </div>
-
-          <label>
-            Tell us about your brewery, venue, or beverage
-            <textarea name="Brewery Details" rows="6" placeholder="What makes your place or product a good fit for the show?" required></textarea>
-          </label>
-
-          <button type="submit" class="btn btn-primary">Submit Brewery Inquiry</button>
-        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p>© <span id="year"></span> Two Dads Having a Beer. Built on GitHub Pages.</p>
-      <p class="footer-note">One dad story at a time.</p>
+      <p>© Two Dads Having a Beer. Built on GitHub Pages.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="media-kit.html">Media Kit</a>
+        <a href="brand-partner.html">Brand Partner</a>
+      </div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
