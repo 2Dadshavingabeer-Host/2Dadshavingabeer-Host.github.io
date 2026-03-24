@@ -8,7 +8,7 @@
     name="description"
     content="Real dads. Real stories. Real beer. Honest conversations about fatherhood, family, purpose, business, faith, and life."
   />
-  <link rel="stylesheet" href="site.css?v=2" />
+  <link rel="stylesheet" href="site.css?v=3" />
 </head>
 <body id="top">
   <header class="site-header">
@@ -153,32 +153,37 @@
           </p>
         </div>
 
-        <form class="guest-form">
+        <form
+          class="guest-form"
+          action="mailto:twodadshavingabeer@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
           <div class="form-row">
             <label>
               <span>Full name</span>
-              <input type="text" name="full-name" placeholder="Your name" />
+              <input type="text" name="Full Name" placeholder="Your name" required />
             </label>
             <label>
               <span>Email</span>
-              <input type="email" name="email" placeholder="Your email" />
+              <input type="email" name="Email" placeholder="Your email" required />
             </label>
           </div>
 
           <div class="form-row">
             <label>
               <span>Location</span>
-              <input type="text" name="location" placeholder="City, state" />
+              <input type="text" name="Location" placeholder="City, state" />
             </label>
             <label>
               <span>What’s in your glass?</span>
-              <input type="text" name="drink" placeholder="Beer, bourbon, coffee, whatever works" />
+              <input type="text" name="Drink" placeholder="Beer, bourbon, coffee, whatever works" />
             </label>
           </div>
 
           <label class="full-width">
             <span>Tell us your dad story</span>
-            <textarea name="story" rows="6" placeholder="Share your story, background, and why you'd be a great guest dad."></textarea>
+            <textarea name="Dad Story" rows="6" placeholder="Share your story, background, and why you'd be a great guest dad." required></textarea>
           </label>
 
           <button type="submit" class="btn btn-primary guest-submit-btn">Apply to be a Guest Dad</button>
